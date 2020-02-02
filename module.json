@@ -1,11 +1,11 @@
 {
   "dependencies": [
     {
-      "git_url": "git@github.com:infraxys-aws/aws-commons.git",
+      "git_url": "https://github.com/infraxys-aws/aws-commons.git",
       "branch": "master"
     },
     {
-      "git_url": "git@github.com:infraxys-modules/terraform.git",
+      "git_url": "https://github.com/infraxys-modules/terraform.git",
       "branch": "master"
     }
   ]

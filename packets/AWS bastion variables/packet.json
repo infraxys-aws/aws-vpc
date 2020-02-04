@@ -78,7 +78,7 @@
       "inputPrompt": "",
       "tooltip": "",
       "scope": "Container",
-      "defaultValue": "/root/.ssh/keys/${instance.getAttribute(\"aws_vpc_bastion_key_pair_name\").replaceAll(\"-\", \"_\")}.pem"
+      "defaultValue": "/root/.ssh/keys/${instance.getAttribute(\"aws_vpc_bastion_key_pair_name\")}"
     }
   ],
   "files": [],

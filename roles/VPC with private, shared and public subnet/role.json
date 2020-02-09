@@ -61,11 +61,24 @@
       "vpc_tag_list": "$container.getAttribute(\"aws_core_tag_list\").replaceAll(\"\u003cname\u003e\", \"$instance.getAttribute(\u0027vpc_name_prefix\u0027)\u003csuffix\u003e\")",
       "instances": [
         {
+          "guid": "guid-46436",
+          "parentGuid": "guid-46420",
+          "packetGuid": "github.com\\infraxys-modules\\terraform\\master\\terraform s3 remote state",
+          "velocityName": "terraformVpcState",
+          "instanceGroups": "",
+          "state_aws_region": "$instance.parent.getAttribute(\"aws_region\")",
+          "state_encrypt_file": "1",
+          "state_key": "$container.getAttribute(\"aws_core_s3_state_folder\")/vpc.tfstate",
+          "state_name": "vpc",
+          "state_s3_bucket": "$container.getAttribute(\"aws_core_s3_state_bucket\")"
+        },
+        {
           "guid": "guid-46421",
           "parentGuid": "guid-46420",
-          "packetGuid": "github.com\\infraxys-modules\\aws-ec2\\master\\aws bastion host",
+          "packetGuid": "github.com\\infraxys-aws\\aws-ec2\\master\\aws bastion host",
           "velocityName": "bastionHost",
           "instanceGroups": "",
+          "aws_region": "$container.getAttribute(\"aws_vpc_region\")",
           "bastion_name": "$container.getAttribute(\"aws_vpc_bastion_name\")",
           "image_id": "ami-07683a44e80cd32c5",
           "instance_type": "t3.nano",
@@ -79,13 +92,13 @@
             {
               "guid": "guid-46432",
               "parentGuid": "guid-46421",
-              "packetGuid": "github.com\\infraxys-modules\\aws-ec2\\master\\security group",
+              "packetGuid": "github.com\\infraxys-aws\\aws-ec2\\master\\security group",
               "velocityName": "bastionSg",
               "instanceGroups": "",
               "description": "Security group  to access its AMIs through the bastion host",
               "egress_rules": "  egress {\n    protocol \u003d -1\n    from_port \u003d 0\n    to_port \u003d 0\n    cidr_blocks \u003d [\n      \"0.0.0.0/0\"\n    ]\n  }",
               "extra_terraform": "",
-              "ingress_rules": "  ingress {\n    protocol    \u003d \"tcp\"\n    from_port   \u003d 22\n    to_port     \u003d 22\n    cidr_blocks \u003d [$instance.parent.getAttribute(\"whitelist\")]\n  }",
+              "ingress_rules": "  ingress {\n    protocol    \u003d \"tcp\"\n    from_port   \u003d 22\n    to_port     \u003d 22\n    cidr_blocks \u003d [\n$container.getAttribute(\"aws_vpc_bastion_ssh_cidr_blocks\")\n]\n  }",
               "security_group_name": "bastion-sg",
               "tags": "$instance.parent.getAttribute(\"vpc_tag_list\").replaceAll(\"\u003csuffix\u003e\", \"-bastion-sg\")"
             }

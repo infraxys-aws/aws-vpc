@@ -10,7 +10,7 @@
   "attributes": [
     {
       "name": "aws_vpc_app_cidr_blocks",
-      "caption": "Ssh CIDR blocks",
+      "caption": "App-access CIDR blocks",
       "type": "byte[]",
       "formColumn": 2,
       "formOrder": 2200,
@@ -86,9 +86,9 @@
       "caption": "VPC name",
       "type": "java.lang.String",
       "formColumn": 1,
-      "formOrder": 10000,
+      "formOrder": 1250,
       "visibility": "ALWAYS VISIBLE",
-      "writability": "NEVER",
+      "writability": "ALWAYS",
       "required": true,
       "isPartOfKey": true,
       "listOfValues": "",

@@ -80,7 +80,7 @@
           "instanceGroups": "",
           "aws_region": "$container.getAttribute(\"aws_vpc_region\")",
           "bastion_name": "$container.getAttribute(\"aws_vpc_bastion_name\")",
-          "image_id": "ami-07683a44e80cd32c5",
+          "image_id": "$container.getAttribute(\"aws_vpc_bastion_image_id\")",
           "instance_type": "t3.nano",
           "key_pair_name": "$container.getAttribute(\"aws_vpc_bastion_key_pair_name\")",
           "private_key_file": "$container.getAttribute(\"aws_vpc_bastion_private_key_file\")",

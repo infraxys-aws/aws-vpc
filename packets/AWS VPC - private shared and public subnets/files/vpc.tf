@@ -11,15 +11,6 @@ provider "aws" {
   version = "~> 2.32.0"
 }
 
-data "terraform_remote_state" "aws_eip" {
-  backend = "s3"
-  config = {
-    bucket = "$aws_core_s3_state_bucket"
-    key = "$aws_core_s3_state_folder/nat-eip.tfstate"
-    region = "$aws_core_region"
-  }
-}
-
 module "vpc" {
 #  source              = "github.com/infraxys-modules/terraform-aws-vpc?ref=master"
 source              = "github.com/terraform-aws-modules/terraform-aws-vpc?ref=master"

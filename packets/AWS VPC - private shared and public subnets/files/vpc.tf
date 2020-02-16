@@ -6,10 +6,18 @@
 #end
 #set ($azs = '"' + $String.join('","', $azList) + '"')
 
-provider "aws" {
-  region = "$aws_region"
-  version = "~> 2.32.0"
+#if (! $instance.getParentInstanceByPacketType("TERRAFORM-AWS-RUNNER"))
+terraform {
+  required_providers {
+    aws = "2.49"
+  }
 }
+
+provider "aws" {
+  region = "$instance.getAttribute("aws_region")"
+}	
+#end
+
 
 module "vpc" {
 #  source              = "github.com/infraxys-modules/terraform-aws-vpc?ref=master"
@@ -64,7 +72,7 @@ one_nat_gateway_per_az = true
 #end
 
 reuse_nat_ips       = true
-external_nat_ip_ids = data.terraform_remote_state.aws_eip.outputs.ids
+external_nat_ip_ids = data.terraform_remote_state.nat-eip.outputs.ids
 ## #if ( $az_count == 1)
 ##external_nat_ip_ids = ["${D}{data.terraform_remote_state.aws_eip.ids}"]
 ## #else

@@ -11,7 +11,7 @@
       "packetKey": "AWS-VPC-VARIABLES"
     },
     {
-      "packetGuid": "github.com\\infraxys-modules\\aws-vpc\\master\\aws bastion variables"
+      "packetGuid": "github.com\\infraxys-aws\\aws-vpc\\master\\aws bastion variables"
     }
   ],
   "instances": [

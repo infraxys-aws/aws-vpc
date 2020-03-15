@@ -17,11 +17,10 @@
   "instances": [
     {
       "guid": "87244696-c442-4d28-ad53-eb8c2336fa20",
-      "parentGuid": "",
       "packetGuid": "github.com\\infraxys-modules\\terraform\\master\\terraform aws runner",
       "velocityName": "",
       "instanceGroups": "",
-      "aws_provider_version": "2.49.0",
+      "aws_provider_version": "2.53.0",
       "aws_region": "$tfStateBucket.getAttribute(\"aws_core_s3_state_region\")",
       "extra_terraform": "",
       "instance_label": "VPC Terraform runner",
@@ -30,7 +29,6 @@
       "instances": [
         {
           "guid": "guid-46420",
-          "parentGuid": "87244696-c442-4d28-ad53-eb8c2336fa20",
           "packetGuid": "github.com\\infraxys-aws\\aws-vpc\\master\\aws vpc - private shared and public subnets",
           "velocityName": "vpc",
           "instanceGroups": "",
@@ -48,7 +46,6 @@
           "instances": [
             {
               "guid": "guid-46436",
-              "parentGuid": "guid-46420",
               "packetGuid": "github.com\\infraxys-modules\\terraform\\master\\terraform s3 remote state",
               "velocityName": "terraformVpcState",
               "instanceGroups": "",
@@ -60,13 +57,13 @@
             },
             {
               "guid": "guid-46421",
-              "parentGuid": "guid-46420",
               "packetGuid": "github.com\\infraxys-aws\\aws-ec2\\master\\aws bastion host",
               "velocityName": "bastionHost",
               "instanceGroups": "",
               "aws_region": "$container.getAttribute(\"aws_vpc_region\")",
               "bastion_name": "$container.getAttribute(\"aws_vpc_bastion_name\")",
               "image_id": "$container.getAttribute(\"aws_vpc_bastion_image_id\")",
+              "image_owners": "$container.getAttribute(\"aws_vpc_bastion_image_owners\")",
               "instance_type": "t3.nano",
               "key_pair_name": "$container.getAttribute(\"aws_vpc_bastion_key_pair_name\")",
               "private_key_file": "$container.getAttribute(\"aws_vpc_bastion_private_key_file\")",
@@ -77,7 +74,6 @@
               "instances": [
                 {
                   "guid": "guid-46432",
-                  "parentGuid": "guid-46421",
                   "packetGuid": "github.com\\infraxys-aws\\aws-ec2\\master\\security group",
                   "velocityName": "bastionSg",
                   "instanceGroups": "",
@@ -96,7 +92,6 @@
     },
     {
       "guid": "guid-46433",
-      "parentGuid": "",
       "packetGuid": "github.com\\infraxys-aws\\aws-vpc\\master\\aws eip",
       "velocityName": "",
       "instanceGroups": "",
@@ -108,7 +103,6 @@
       "instances": [
         {
           "guid": "guid-46434",
-          "parentGuid": "guid-46433",
           "packetGuid": "github.com\\infraxys-modules\\terraform\\master\\terraform s3 remote state",
           "velocityName": "terraformEipState",
           "instanceGroups": "",

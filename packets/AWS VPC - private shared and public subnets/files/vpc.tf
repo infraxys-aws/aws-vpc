@@ -1,4 +1,4 @@
-#set ($azList = $velocityService.getNewList())
+#set ($azList = $velocityUtils.getNewList())
 #set ($currentSuffix = "a")
 #foreach($i in [1..$Integer.parseInt($az_count)])
 #set ($dummy = $azList.add("${aws_region}$currentSuffix"))

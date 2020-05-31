@@ -1,5 +1,6 @@
 {
   "version": "1.0",
+  "id": "96c9e079-7a37-4877-899c-38d41b7e88ee",
   "label": "%rule_number% - %rule_name% - Rule",
   "type": "",
   "autoExpand": false,
@@ -10,6 +11,7 @@
   "infoHtml": "\u003cp\u003e\u003ca href\u003d\"https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html\"  target\u003d\"_blank\"\u003eSee Network ACLS\u003c/a\u003e and \u003ca href\u003d\"http://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml\" target\u003d\"_blank\"\u003eProtocol numbers\u003c/a\u003e\u003c/p\u003e",
   "attributes": [
     {
+      "id": "6eddfb25-5714-48a6-a15a-4b0ddad3eee3",
       "name": "cidr_block",
       "caption": "CIDR block",
       "type": "java.lang.String",
@@ -23,7 +25,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": false,
       "cloneAttribute": true,
@@ -33,6 +35,7 @@
       "defaultValue": "0.0.0.0/0"
     },
     {
+      "id": "5f1ebe33-0588-41dc-b1d9-5c8b8a757842",
       "name": "from_port",
       "caption": "From port",
       "type": "java.lang.Long",
@@ -46,7 +49,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": false,
       "cloneAttribute": true,
@@ -56,6 +59,7 @@
       "defaultValue": "443"
     },
     {
+      "id": "63677b07-d19c-4513-833e-81bb1fdc6782",
       "name": "protocol",
       "caption": "Protocol",
       "type": "java.lang.String",
@@ -69,7 +73,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": true,
       "parseWithVelocity": false,
       "cloneAttribute": true,
@@ -79,6 +83,7 @@
       "defaultValue": "tcp"
     },
     {
+      "id": "453c23f9-a7e8-4108-8292-ce1e6c3bad48",
       "name": "rule_action",
       "caption": "Rule action",
       "type": "java.lang.String",
@@ -92,7 +97,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": false,
       "cloneAttribute": true,
@@ -102,6 +107,7 @@
       "defaultValue": "allow"
     },
     {
+      "id": "d18db5a5-f679-47a3-b6f0-425d5c36e515",
       "name": "rule_name",
       "caption": "Name",
       "type": "java.lang.String",
@@ -115,7 +121,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": false,
       "cloneAttribute": true,
@@ -125,6 +131,7 @@
       "defaultValue": ""
     },
     {
+      "id": "7d4687b2-922d-43ca-8c77-f7083cab141e",
       "name": "rule_number",
       "caption": "Number",
       "type": "java.lang.Long",
@@ -138,7 +145,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": false,
       "cloneAttribute": true,
@@ -148,6 +155,7 @@
       "defaultValue": ""
     },
     {
+      "id": "7b6ae340-2d8b-4032-81b1-935b78787e16",
       "name": "to_port",
       "caption": "To port",
       "type": "java.lang.Long",
@@ -161,7 +169,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": false,
       "cloneAttribute": true,

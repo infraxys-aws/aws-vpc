@@ -16,6 +16,7 @@ function _configure_ssh_for_vpc() {
 	fi;
 }
 
-_configure_ssh_for_vpc;
 
+_configure_ssh_for_vpc;
 ]]#
+

@@ -1,16 +1,17 @@
 {
   "version": "1.0",
+  "id": "5b339ba8-8475-4ae4-a377-debaa9f2e9ee",
   "label": "AWS VPC - private shared and public subnets",
   "type": "AWS_VPC",
   "autoExpand": true,
   "skipEveryInstanceFiles": false,
   "limitToAllowedChildren": false,
   "autoGenerate": false,
-  "inheritFilesFromPacketGuid": "github.com\\infraxys-modules\\terraform\\master\\terraform helper\n",
   "key": "",
   "infoHtml": "\u003cp\u003eVPC with private and public subnets\u003c/p\u003e",
   "attributes": [
     {
+      "id": "2d65b8ca-f894-4171-9f37-33b56a166ec2",
       "name": "aws_region",
       "caption": "Region",
       "type": "java.lang.String",
@@ -24,7 +25,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": true,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -34,6 +35,7 @@
       "defaultValue": "eu-west-1"
     },
     {
+      "id": "529edf17-9bbe-46ee-859e-3c5eccb3ee2b",
       "name": "az_count",
       "caption": "AZ count",
       "type": "java.lang.String",
@@ -47,7 +49,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -57,6 +59,7 @@
       "defaultValue": "2"
     },
     {
+      "id": "53d3954f-09e3-48ac-b1fb-407f93067532",
       "name": "create_bastion",
       "caption": "Create bastion instance",
       "type": "java.lang.String",
@@ -70,7 +73,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": true,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -80,6 +83,7 @@
       "defaultValue": "1"
     },
     {
+      "id": "8805c9a7-4eaf-48a6-8ba0-f0409b00c57c",
       "name": "last_terraform_output",
       "caption": "Last Terraform output",
       "type": "byte[]",
@@ -93,7 +97,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": false,
       "cloneAttribute": true,
@@ -103,6 +107,7 @@
       "defaultValue": ""
     },
     {
+      "id": "9c8d1b21-5e6a-4a60-b2e3-6087268f2321",
       "name": "nat_scenario",
       "caption": "NAT scenario",
       "type": "java.lang.String",
@@ -116,7 +121,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": true,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -126,6 +131,7 @@
       "defaultValue": "NAT_PER_AZ"
     },
     {
+      "id": "43ff37e0-a3f0-461b-8683-58e3b22a71ea",
       "name": "terraform_version",
       "caption": "terraform_version",
       "type": "java.lang.String",
@@ -139,7 +145,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": true,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -149,6 +155,7 @@
       "defaultValue": "0.12.10"
     },
     {
+      "id": "a0c29b29-7173-4ccc-a92d-d542205b32c0",
       "name": "vpc_cidr",
       "caption": "CIDR",
       "type": "java.lang.String",
@@ -162,7 +169,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -172,6 +179,7 @@
       "defaultValue": ""
     },
     {
+      "id": "61a3a60b-aca7-4f28-912c-c3850e8af66c",
       "name": "vpc_name",
       "caption": "vpc_name",
       "type": "java.lang.String",
@@ -185,7 +193,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -195,6 +203,7 @@
       "defaultValue": "$instance.getAttribute(\"vpc_name_prefix\")-vpc"
     },
     {
+      "id": "b2fb6b81-8ba1-473a-b9ae-245391b95275",
       "name": "vpc_name_prefix",
       "caption": "Prefix",
       "type": "java.lang.String",
@@ -208,7 +217,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -218,6 +227,7 @@
       "defaultValue": ""
     },
     {
+      "id": "ef1e0886-26a1-4e93-8f6f-878cb1fa2ffe",
       "name": "vpc_propagated_tag_list",
       "caption": "Propagated tags",
       "type": "byte[]",
@@ -232,7 +242,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -242,6 +252,7 @@
       "defaultValue": "tag {\n    key \u003d \"Name\"\n    value  \u003d \"example\"\n    propagate_at_launch \u003d true\n},\ntag {\n    key \u003d \"Environment\"\n    value  \u003d \"$environment.name\"\n    propagate_at_launch \u003d true\n}"
     },
     {
+      "id": "8a125083-cc40-4a37-925c-cb81768a9393",
       "name": "vpc_tag_list",
       "caption": "Tags",
       "type": "byte[]",
@@ -256,7 +267,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -268,7 +279,7 @@
   ],
   "files": [
     {
-      "guid": "7307f6bd-1f98-4342-84e5-53e358a1e24b",
+      "id": "7307f6bd-1f98-4342-84e5-53e358a1e24b",
       "filename": "outputs.tf",
       "menuCaption": "outputs.tf",
       "directory": "",
@@ -286,10 +297,12 @@
       "menuSeparatorBefore": false,
       "hideFromInstanceActionsMenu": false,
       "hideFromBottomMenu": false,
-      "menuPath": ""
+      "menuPath": "",
+      "dockerImage": "",
+      "customCommand": ""
     },
     {
-      "guid": "1443d955-8318-45aa-a62b-4ab8a337bfc3",
+      "id": "1443d955-8318-45aa-a62b-4ab8a337bfc3",
       "filename": "show_vpc_ssh_config.sh",
       "includeName": "",
       "menuCaption": "Show VPC Ssh config",
@@ -313,7 +326,7 @@
       "customCommand": ""
     },
     {
-      "guid": "2ac12cb1-9455-4561-9c0d-0c69934d9690",
+      "id": "2ac12cb1-9455-4561-9c0d-0c69934d9690",
       "filename": "vpc.tf",
       "menuCaption": "vpc.tf",
       "directory": "",
@@ -331,7 +344,9 @@
       "menuSeparatorBefore": false,
       "hideFromInstanceActionsMenu": false,
       "hideFromBottomMenu": false,
-      "menuPath": ""
+      "menuPath": "",
+      "dockerImage": "",
+      "customCommand": ""
     }
   ],
   "allowedChildren": []

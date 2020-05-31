@@ -1,16 +1,17 @@
 {
   "version": "1.0",
+  "id": "c2f0ccef-aaaf-429b-9726-eaf14a076383",
   "label": "%instance_label%",
   "type": "",
   "autoExpand": false,
   "skipEveryInstanceFiles": false,
   "limitToAllowedChildren": false,
   "autoGenerate": false,
-  "inheritFilesFromPacketGuid": "",
   "key": "",
   "infoHtml": "",
   "attributes": [
     {
+      "id": "eb6216ef-728f-4e47-93cc-6cf3fe819ad4",
       "name": "instance_label",
       "caption": "Instance label",
       "type": "java.lang.String",
@@ -24,7 +25,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": false,
       "cloneAttribute": true,
@@ -34,6 +35,7 @@
       "defaultValue": "Ingress rules"
     },
     {
+      "id": "10927cb1-b427-4ffc-84ec-4ad867294218",
       "name": "port_ranges",
       "caption": "Port ranges",
       "type": "java.lang.String",
@@ -47,7 +49,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": false,
       "cloneAttribute": true,

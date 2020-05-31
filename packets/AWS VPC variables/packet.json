@@ -1,5 +1,6 @@
 {
   "version": "1.0",
+  "id": "38f9a32a-033f-4d96-85e0-0d4cd664a55f",
   "label": "AWS VPC variables",
   "type": "TT",
   "autoExpand": true,
@@ -9,6 +10,7 @@
   "key": "AWS-VPC-VARIABLES",
   "attributes": [
     {
+      "id": "72192d96-0de2-4714-99f9-f4a4d77bf52c",
       "name": "aws_vpc_app_cidr_blocks",
       "caption": "App-access CIDR blocks",
       "type": "byte[]",
@@ -23,7 +25,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -33,6 +35,7 @@
       "defaultValue": "        \"1.1.1.1/32\", # Place 1\n        \"2.2.2.2/32\" # Place 2"
     },
     {
+      "id": "c0a2424d-5f50-4766-8ac0-47d4b6fe9a2e",
       "name": "aws_vpc_az_count",
       "caption": "AZ count",
       "type": "java.lang.String",
@@ -46,7 +49,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": true,
       "parseWithVelocity": false,
       "cloneAttribute": true,
@@ -56,6 +59,7 @@
       "defaultValue": "2"
     },
     {
+      "id": "a7a8cf07-e145-46ae-a882-c0b8d851b940",
       "name": "aws_vpc_cidr",
       "caption": "CIDR",
       "type": "java.lang.String",
@@ -69,7 +73,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -79,6 +83,7 @@
       "defaultValue": ""
     },
     {
+      "id": "267c074a-b1e4-488c-9b57-a728c02cf5ec",
       "name": "aws_vpc_name",
       "caption": "VPC name",
       "type": "java.lang.String",
@@ -92,7 +97,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -102,6 +107,7 @@
       "defaultValue": "$instance.getAttribute(\"aws_vpc_name_prefix\")-vpc"
     },
     {
+      "id": "94ede95c-f9f6-4253-ac80-fee188807a39",
       "name": "aws_vpc_name_prefix",
       "caption": "Prefix",
       "type": "java.lang.String",
@@ -115,7 +121,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -125,6 +131,7 @@
       "defaultValue": ""
     },
     {
+      "id": "8a335629-a9dd-450a-a8aa-4c02ec513a08",
       "name": "aws_vpc_nat_scenario",
       "caption": "NAT scenario",
       "type": "java.lang.String",
@@ -138,7 +145,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": true,
       "parseWithVelocity": false,
       "cloneAttribute": true,
@@ -148,6 +155,7 @@
       "defaultValue": "NAT_PER_AZ"
     },
     {
+      "id": "05443759-54c0-4f17-817a-f159c8b31ee1",
       "name": "aws_vpc_region",
       "caption": "Region",
       "type": "java.lang.String",
@@ -161,7 +169,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": true,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -171,6 +179,7 @@
       "defaultValue": "eu-west-1"
     },
     {
+      "id": "5bf2b0c2-431a-42d8-8a16-d74329a01522",
       "name": "aws_vpc_terraform_version",
       "caption": "terraform_version",
       "type": "java.lang.String",
@@ -184,7 +193,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": true,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -196,7 +205,7 @@
   ],
   "files": [
     {
-      "guid": "499fbfb8-1aac-4ac2-b35b-9b3bb708f57f",
+      "id": "499fbfb8-1aac-4ac2-b35b-9b3bb708f57f",
       "filename": "configure_ssh_for_vpc",
       "includeName": "",
       "menuCaption": "configure_ssh_for_vpc",

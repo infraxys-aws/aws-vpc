@@ -1,16 +1,17 @@
 {
   "version": "1.0",
+  "id": "a697706c-2a30-4b5a-b4c2-3c1f8a60ccb5",
   "label": "%instance_label% - AWS Elastic IP - Terraform",
   "type": "",
   "autoExpand": false,
   "skipEveryInstanceFiles": false,
   "limitToAllowedChildren": false,
   "autoGenerate": false,
-  "inheritFilesFromPacketGuid": "github.com\\infraxys-modules\\terraform\\master\\terraform helper\n",
   "key": "",
   "infoHtml": "",
   "attributes": [
     {
+      "id": "a7ab3ffc-5990-4736-ace0-4606d5f934ff",
       "name": "aws_region",
       "caption": "Region",
       "type": "java.lang.String",
@@ -24,7 +25,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": true,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -34,6 +35,7 @@
       "defaultValue": "eu-west-1"
     },
     {
+      "id": "3ffac9f3-6825-441a-809c-8111086c996d",
       "name": "eip_count",
       "caption": "Elastic IP count",
       "type": "java.lang.String",
@@ -47,7 +49,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -57,6 +59,7 @@
       "defaultValue": ""
     },
     {
+      "id": "f8e11efa-c01c-453e-956d-180b8c11d59b",
       "name": "instance_label",
       "caption": "Label",
       "type": "java.lang.String",
@@ -70,7 +73,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": false,
       "cloneAttribute": true,
@@ -80,6 +83,7 @@
       "defaultValue": "Elastic IPs for "
     },
     {
+      "id": "f25ff5ab-e19a-4e06-8cc8-31a00367f1e7",
       "name": "tags",
       "caption": "Tags",
       "type": "byte[]",
@@ -94,7 +98,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -104,6 +108,7 @@
       "defaultValue": ""
     },
     {
+      "id": "c5e78ef3-c425-4281-81f6-d2d1ddd4fe2b",
       "name": "terraform_version",
       "caption": "terraform_version",
       "type": "java.lang.String",
@@ -117,7 +122,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": true,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -129,7 +134,7 @@
   ],
   "files": [
     {
-      "guid": "caac64ca-dbf1-4e83-872e-157bd5b222a9",
+      "id": "caac64ca-dbf1-4e83-872e-157bd5b222a9",
       "filename": "eip.tf",
       "includeName": "",
       "menuCaption": "eip.tf",
@@ -148,7 +153,9 @@
       "menuSeparatorBefore": false,
       "hideFromInstanceActionsMenu": false,
       "hideFromBottomMenu": false,
-      "menuPath": ""
+      "menuPath": "",
+      "dockerImage": "",
+      "customCommand": ""
     }
   ],
   "allowedChildren": []

@@ -1,5 +1,6 @@
 {
   "version": "1.0",
+  "id": "986f4e77-8646-440b-8d48-e228864a0067",
   "label": "%acl_name% - Network ACL",
   "type": "",
   "autoExpand": false,
@@ -9,6 +10,7 @@
   "key": "",
   "attributes": [
     {
+      "id": "6604eb9b-0895-4940-8e77-c3de2015811a",
       "name": "acl_name",
       "caption": "Name",
       "type": "java.lang.String",
@@ -22,7 +24,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": false,
       "cloneAttribute": true,
@@ -32,6 +34,7 @@
       "defaultValue": ""
     },
     {
+      "id": "ca6bdf9e-9452-47e4-9ba0-610e4474bb10",
       "name": "tags",
       "caption": "Tags",
       "type": "byte[]",
@@ -46,7 +49,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": true,
       "cloneAttribute": true,

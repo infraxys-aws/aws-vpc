@@ -1,15 +1,16 @@
 {
   "version": "1.0",
+  "id": "f7fef303-ee9c-4427-87e0-23fc8b2d0e7e",
   "label": "AWS bastion variables",
   "type": "AWS-BASTION-VARIABLES",
   "autoExpand": false,
   "skipEveryInstanceFiles": false,
   "limitToAllowedChildren": false,
   "autoGenerate": false,
-  "inheritFilesFromPacketGuid": "",
   "key": "AWS-BASTION-VARIABLES",
   "attributes": [
     {
+      "id": "e0eae504-57f2-41b3-a441-3e97b427cbc0",
       "name": "aws_vpc_bastion_image_id",
       "caption": "Image id",
       "type": "java.lang.String",
@@ -23,7 +24,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": true,
       "parseWithVelocity": false,
       "cloneAttribute": true,
@@ -33,6 +34,7 @@
       "defaultValue": "amzn2-ami-hvm-2.0.202*"
     },
     {
+      "id": "9ad11ee7-cca4-42da-b2fb-1373744f4116",
       "name": "aws_vpc_bastion_image_owners",
       "caption": "Image owners",
       "type": "java.lang.String",
@@ -46,7 +48,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": true,
       "parseWithVelocity": false,
       "cloneAttribute": true,
@@ -56,6 +58,7 @@
       "defaultValue": "amazon"
     },
     {
+      "id": "859cf668-a426-4948-a663-11c85a6a3f14",
       "name": "aws_vpc_bastion_key_pair_name",
       "caption": "Bastion key pair name",
       "type": "java.lang.String",
@@ -69,7 +72,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -78,6 +81,7 @@
       "scope": "Container"
     },
     {
+      "id": "59d2ffcb-0010-45f0-a877-295746d5149c",
       "name": "aws_vpc_bastion_name",
       "caption": "Bastion name",
       "type": "java.lang.String",
@@ -91,7 +95,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -101,6 +105,7 @@
       "defaultValue": "$instance.getAttribute(\"aws_vpc_name_prefix\")-bastion"
     },
     {
+      "id": "102f5628-7f12-4695-8da6-c64966b0bc1a",
       "name": "aws_vpc_bastion_private_key_file",
       "caption": "Bastion private key file",
       "type": "java.lang.String",
@@ -114,7 +119,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -124,6 +129,7 @@
       "defaultValue": "/root/.ssh/keys/${instance.getAttribute(\"aws_vpc_bastion_key_pair_name\")}"
     },
     {
+      "id": "2095f5e3-56de-4fe7-9947-85277d0bea55",
       "name": "aws_vpc_bastion_ssh_cidr_blocks",
       "caption": "Ssh CIDR blocks",
       "type": "byte[]",
@@ -138,7 +144,7 @@
       "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": true,
       "cloneAttribute": true,
@@ -148,6 +154,7 @@
       "defaultValue": "        \"1.1.1.1/32\", # Place 1\n        \"2.2.2.2/32\" # Place 2"
     },
     {
+      "id": "50df6c98-a034-4c59-9614-0d6e3841b6d6",
       "name": "aws_vpc_bastion_username",
       "caption": "SSH username",
       "type": "java.lang.String",
@@ -158,9 +165,10 @@
       "required": true,
       "isPartOfKey": false,
       "listOfValues": "",
+      "cacheMinutes": 0,
       "referenceFilter": "",
       "referenceValueAttributeName": "",
-      "referenceChildGuidFilter": "",
+      "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": false,
       "cloneAttribute": true,

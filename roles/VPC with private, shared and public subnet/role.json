@@ -120,7 +120,7 @@
         {
           "id": "f48b2125-e20f-40dc-84df-98f3681931c8",
           "name": "terraform_version",
-          "value": "0.12.12"
+          "value": "0.12.24"
         }
       ],
       "instances": [
@@ -291,6 +291,11 @@
                       "id": "1e5ff34c-6da0-43dd-bacb-fa688a4e0c6c",
                       "name": "tags",
                       "value": "$instance.parent.getAttribute(\"vpc_tag_list\").replaceAll(\"\u003csuffix\u003e\", \"-bastion-sg\")"
+                    },
+                    {
+                      "id": "ebcbc7fd-d4b0-4b04-bf16-afc18d698cca",
+                      "name": "ignore_changes",
+                      "value": ""
                     }
                   ]
                 }

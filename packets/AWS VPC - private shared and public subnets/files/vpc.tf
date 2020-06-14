@@ -20,8 +20,8 @@ provider "aws" {
 
 
 module "vpc" {
-#  source              = "github.com/infraxys-modules/terraform-aws-vpc?ref=master"
-source              = "github.com/terraform-aws-modules/terraform-aws-vpc?ref=master"
+  source              = "github.com/infraxys-modules/terraform-aws-vpc?ref=master"
+#source              = "github.com/terraform-aws-modules/terraform-aws-vpc?ref=master"
   name                = "${vpc_name}"
   vpc_tags = {
     $vpc_tag_list.replaceAll("<suffix>", "-vpc")

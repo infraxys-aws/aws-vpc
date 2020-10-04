@@ -9,38 +9,19 @@
   "autoGenerate": false,
   "extends": [
     {
-      "name": "Terraform Helper",
+      "name": "Terraform S3 remote state",
       "moduleBranchPath": "github.com\\infraxys-modules\\terraform\\master",
-      "id": "a3acdf4d-9d7c-4a0f-bbc8-8ea21f667e43"
+      "id": "61654b2d-ec4c-456b-a1b4-679e57dde6f4"
+    },
+    {
+      "name": "AWS Terraform base",
+      "moduleBranchPath": "github.com\\infraxys-aws\\aws-commons\\master",
+      "id": "79b72fc7-47bf-4f23-a726-368e06b86115"
     }
   ],
   "key": "",
   "infoHtml": "",
   "attributes": [
-    {
-      "id": "a7ab3ffc-5990-4736-ace0-4606d5f934ff",
-      "name": "aws_region",
-      "caption": "Region",
-      "type": "java.lang.String",
-      "formColumn": 1,
-      "formOrder": 1400,
-      "visibility": "ALWAYS VISIBLE",
-      "writability": "ALWAYS",
-      "required": true,
-      "isPartOfKey": false,
-      "listOfValues": "$instance.parent.getAttribute(\"aws_region\"),$container.getAttribute(\"aws_vpc_region\"),us-east-1,eu-west-1",
-      "cacheMinutes": 0,
-      "referenceFilter": "",
-      "referenceValueAttributeName": "",
-      "referenceChildIdFilter": "",
-      "newItemsAllowed": true,
-      "parseWithVelocity": true,
-      "cloneAttribute": true,
-      "inputPrompt": "",
-      "tooltip": "",
-      "scope": "Instance",
-      "defaultValue": "eu-west-1"
-    },
     {
       "id": "3ffac9f3-6825-441a-809c-8111086c996d",
       "name": "eip_count",
@@ -59,7 +40,6 @@
       "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": true,
-      "cloneAttribute": true,
       "inputPrompt": "",
       "tooltip": "\u003cp\u003eSpecify how many elastic IPs should be reserved for this instance\u003c/p\u003e",
       "scope": "Instance",
@@ -83,7 +63,6 @@
       "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": false,
-      "cloneAttribute": true,
       "inputPrompt": "",
       "tooltip": "",
       "scope": "Instance",
@@ -108,35 +87,10 @@
       "referenceChildIdFilter": "",
       "newItemsAllowed": false,
       "parseWithVelocity": true,
-      "cloneAttribute": true,
       "inputPrompt": "",
       "tooltip": "\u003cp\u003eSpecify the tags to add to AWS resources. This value is parsed with Velocity.\u003c/p\u003e\n\u003cp\u003eEnter something like the following:\u003cp\u003e\n\u003cpre\u003e\u003ccode\u003e\ntags \u003d {\n    Owner       \u003d \"user\",\n    Environment \u003d \"staging\",\n    Name        \u003d \"complete\"\n  }\n\u003c/pre\u003e\u003c/code\u003e",
       "scope": "Instance",
       "defaultValue": ""
-    },
-    {
-      "id": "c5e78ef3-c425-4281-81f6-d2d1ddd4fe2b",
-      "name": "terraform_version",
-      "caption": "terraform_version",
-      "type": "java.lang.String",
-      "formColumn": 1,
-      "formOrder": 1100,
-      "visibility": "ALWAYS VISIBLE",
-      "writability": "ALWAYS",
-      "required": false,
-      "isPartOfKey": false,
-      "listOfValues": "0.11.11,0.12.10,0.12.12",
-      "cacheMinutes": 0,
-      "referenceFilter": "",
-      "referenceValueAttributeName": "",
-      "referenceChildIdFilter": "",
-      "newItemsAllowed": true,
-      "parseWithVelocity": true,
-      "cloneAttribute": true,
-      "inputPrompt": "",
-      "tooltip": "",
-      "scope": "Instance",
-      "defaultValue": "0.11.11"
     }
   ],
   "files": [

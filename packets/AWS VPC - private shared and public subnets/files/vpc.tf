@@ -6,19 +6,6 @@
 #end
 #set ($azs = '"' + $String.join('","', $azList) + '"')
 
-#if (! $instance.getParentInstanceByPacketType("TERRAFORM-AWS-RUNNER"))
-terraform {
-  required_providers {
-    aws = "2.49"
-  }
-}
-
-provider "aws" {
-  region = "$instance.getAttribute("aws_region")"
-}	
-#end
-
-
 module "vpc" {
   source              = "github.com/infraxys-modules/terraform-aws-vpc?ref=master"
 #source              = "github.com/terraform-aws-modules/terraform-aws-vpc?ref=master"

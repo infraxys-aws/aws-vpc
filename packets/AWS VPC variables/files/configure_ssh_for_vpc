@@ -5,7 +5,7 @@ function _configure_ssh_for_vpc() {
 	else
 #[[
 	    local _ssh_config="$("$AWS_COMMONS_MODULE_DIR/utils/generate_vpc_ssh_config.py" "$_vpc_name")";
-		if [ $? -eq 0 ]; then
+		if [ $? -eq 0 -a "$_ssh_config" != "" ]; then
 		    echo "$_ssh_config" > ~/.ssh/generated.d/$_vpc_name;
 		  else
 		    log_error "Unable to generate ssh config for vpc '$_vpc_name'.";

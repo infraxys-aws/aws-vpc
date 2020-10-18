@@ -4,13 +4,15 @@ function _configure_ssh_for_vpc() {
 		echo "Not configuring ssh because none of 'aws_core_credentials_default_profile_or_role' and 'auto_connect_aws_profile_name' is set.";
 	else
 #[[
-	    local _ssh_config="$("$AWS_COMMONS_MODULE_DIR/utils/generate_vpc_ssh_config.py" "$_vpc_name")";
-		if [ $? -eq 0 -a "$_ssh_config" != "" ]; then
+	    local _ssh_config="$("$AWS_COMMONS_MODULE_DIR/python/infraxys_aws/utils/generate_vpc_ssh_config.py" "$_vpc_name")";
+	    local exit_code="$?";
+		if [ $exit_code -eq 0 -a "$_ssh_config" != "" ]; then
 		    echo "$_ssh_config" > ~/.ssh/generated.d/$_vpc_name;
 		  else
-		    log_error "Unable to generate ssh config for vpc '$_vpc_name'.";
+		    echo "Unable to generate ssh config for vpc '$_vpc_name'. (exit code was $exit_code)";
+		    exit 1;
 		  fi;
-		#${D}MODULES_ROOT/github.com/infraxys-aws/aws-commons/master/utils/generate_vpc_ssh_config.py \
+		#${D}MODULES_ROOT/github.com/infraxys-aws/aws-commons/master/python/infraxys_aws/utils/generate_vpc_ssh_config.py \
 		#	"$instance.getAttribute("aws_vpc_name")" \
 		#	> ~/.ssh/generated.d/$instance.getAttribute("aws_vpc_name");
 	fi;
